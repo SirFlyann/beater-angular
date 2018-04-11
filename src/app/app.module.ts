@@ -9,9 +9,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { RestaurantsComponent } from './restaurants/restaurants.component';
-import { RestaurantComponent } from './restaurants/restaurant/restaurant.component'
-import {RestaurantsService} from './restaurants/restaurants.service';
+import { SongsComponent } from './songs/songs.component';
+import { SongComponent } from './song/song.component'
+import { SongsService } from './songs/songs.service';
 import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { MenuComponent } from './restaurant-detail/menu/menu.component';
 import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
@@ -23,8 +23,8 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    RestaurantsComponent,
-    RestaurantComponent,
+    SongsComponent,
+    SongComponent,
     RestaurantDetailComponent,
     MenuComponent,
     ShoppingCartComponent,
@@ -35,7 +35,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService],
+  providers: [SongsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
