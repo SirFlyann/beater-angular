@@ -9,13 +9,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { SongsComponent } from './songs/songs.component';
-import { SongComponent } from './song/song.component'
-import { SongsService } from './songs/songs.service';
-import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
-import { MenuComponent } from './restaurant-detail/menu/menu.component';
-import { ShoppingCartComponent } from './restaurant-detail/shopping-cart/shopping-cart.component';
-import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.component'
+import { GenresComponent } from './genres/genres.component';
+import { GenreComponent } from './genre/genre.component'
+import { GenresService } from './genres/genres.service';
+import { GenreDetailComponent } from './genre-detail/genre-detail.component';
+import { MenuComponent } from './menu/menu.component';
+import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { MenuItemComponent } from './menu-item/menu-item.component'
 
 @NgModule({
   declarations: [
@@ -23,9 +23,9 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    SongsComponent,
-    SongComponent,
-    RestaurantDetailComponent,
+    GenresComponent,
+    GenreComponent,
+    GenreDetailComponent,
     MenuComponent,
     ShoppingCartComponent,
     MenuItemComponent
@@ -35,7 +35,7 @@ import { MenuItemComponent } from './restaurant-detail/menu-item/menu-item.compo
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [SongsService],
+  providers: [GenresService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,13 +1,11 @@
 {
-  "songs": [
+  "genres": [
     {
-      "id": "waves",
-      "name": "Waves",
-      "album": "Waves",
-      "author": "Mr. Probz",
+      "id": "pop",
+      "name": "Pop",
       "rating": 4.9,
-      "genre": "Pop",
-      "picture": "assets/img/restaurants/breadbakery.png"
+      "picture": "assets/img/restaurants/breadbakery.png",
+      "review": "Músicas mundialmente famosas, necessárias em qualquer festa!"
     }
   ],
   "menu": [

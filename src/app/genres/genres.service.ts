@@ -8,16 +8,16 @@ import 'rxjs/add/operator/map'
 import 'rxjs/add/operator/catch'
 
 import { ErrorHandler } from '../app.error-handler'
-import { Song } from '../song/song.model'
+import { Genre } from '../genre/genre.model'
 
 import { MEAT_API } from '../app.api'
 
 @Injectable()
-export class SongsService{
+export class GenresService{
   constructor(private http:Http){}
 
-  songs(): Observable<Song[]>{
-    return this.http.get(`${MEAT_API}/songs`)
+  genres(): Observable<Genre[]>{
+    return this.http.get(`${MEAT_API}/genres`)
       .map(response => response.json())
       .catch(ErrorHandler.handleError)
   }
