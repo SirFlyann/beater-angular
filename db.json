@@ -1,13 +1,13 @@
 {
   "songs": [
     {
-      "id": "waves",
-      "name": "Waves",
-      "album": "Waves",
-      "author": "Mr. Probz",
+      "id": "doors",
+      "name": "L.A WOAMAN",
+      "album": "L.A WOAMAN",
+      "author": "THE DOORS",
       "rating": 4.9,
-      "genre": "Pop",
-      "picture": "assets/img/restaurants/breadbakery.png"
+      "genre": "Rock",
+      "picture": "assets/img/foods/doors.jpg"
     }
   ],
   "menu": [
