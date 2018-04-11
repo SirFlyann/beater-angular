@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { GenresComponent } from './genres/genres.component';
 import { GenreComponent } from './genre/genre.component'
 import { GenresService } from './genres/genres.service';
+import { GenreService } from './genre/genre.service';
 import { GenreDetailComponent } from './genre-detail/genre-detail.component';
 import { MenuComponent } from './menu/menu.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
@@ -35,7 +36,10 @@ import { MenuItemComponent } from './menu-item/menu-item.component'
     HttpModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [GenresService],
+  providers: [
+    GenresService,
+    GenreService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

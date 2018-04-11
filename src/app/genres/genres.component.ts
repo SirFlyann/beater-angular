@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Genre } from '../genre/genre.model'
+import { Genre } from '../genre/genre.model';
 
-import { GenresService } from './genres.service'
+import { GenresService } from './genres.service';
 
 @Component({
   selector: 'mt-genres',
@@ -10,7 +10,7 @@ import { GenresService } from './genres.service'
 })
 export class GenresComponent implements OnInit {
 
-  genres: Genre[]
+  genres: Genre[];
 
   constructor(private genresService: GenresService) { }
 
