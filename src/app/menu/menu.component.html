@@ -1,15 +1,7 @@
 <div class="col-md-9 col-xs-12">
-  <div *ngFor="let song of songs" class="col-sm-6 col-xs-12">
-    <div class="menu-item-info-box">
-      <span class="menu-item-info-box-icon"><img src="song.picture"></span>
-      <div class="menu-item-info-box-content">
-        <span class="menu-item-info-box-text">{{ song.name }}</span>
-        <span class="menu-item-info-box-detail">{{ song.review }}</span>
-        <span class="menu-item-info-box-price">{{ song.price }}</span>
-        <a class=""><i class="fa fa-plus-circle"></i> Adicionar</a>
-      </div>
-    </div>
-  </div>
+  <mt-menu-item
+     *ngFor="let item of menu | async"
+     [menuItem]="item" (add)="shoppingCart.addItem($event)"> </mt-menu-item>
 </div>
 <div class="col-md-3 col-xs-12">
   <mt-shopping-cart></mt-shopping-cart>

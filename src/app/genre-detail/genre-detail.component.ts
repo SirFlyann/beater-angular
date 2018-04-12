@@ -19,7 +19,7 @@ export class GenreDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.genresService.genre(this.route.snapshot.params['id']).subscribe(genres => this.genre = genres[0]);
+    this.genresService.genre(this.route.snapshot.params['id']).subscribe(genre => this.genre = genre);
   }
 
 }

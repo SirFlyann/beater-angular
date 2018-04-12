@@ -22,7 +22,7 @@ export class GenresService{
       .catch(ErrorHandler.handleError)
   }
 
-  genre(id: string): Observable<Genre[]> {
+  genre(id: string): Observable<Genre> {
     return this.http.get(`${MEAT_API}/genres/${id}`)
       .map(response => response.json())
       .catch(ErrorHandler.handleError);

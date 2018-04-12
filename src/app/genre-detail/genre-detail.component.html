@@ -10,10 +10,10 @@
           <i class="fa fa-home"></i>
           <h3 class="box-title">
             {{genre?.name}}
+          </h3>
             <span class="pull-right">
               <i class="fa fa-star"></i> {{genre?.rating}}
             </span>
-          </h3>
         </div>
         <div class="box-body">
           <div *ngIf="genre" class="col-sm-3 col-xs-12">
@@ -21,7 +21,7 @@
           </div>
           <dl class="col-sm-9 col-xs-12">
             <dt>Descrição</dt>
-            <dd>{{ genre.review }}</dd>
+            <dd>{{ genre?.review }}</dd>
           </dl>
         </div>
         <div class="box-footer detail-footer">
