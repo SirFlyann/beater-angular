@@ -15,6 +15,7 @@ import { GenresService } from './genres/genres.service';
 import { GenreDetailComponent } from './genre-detail/genre-detail.component';
 import { MenuComponent } from './menu/menu.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ShoppingCartService } from './shopping-cart/shopping-cart.service';
 import { MenuItemComponent } from './menu-item/menu-item.component';
 import { ReviewsComponent } from './reviews/reviews.component'
 
@@ -39,6 +40,7 @@ import { ReviewsComponent } from './reviews/reviews.component'
   ],
   providers: [
     GenresService,
+    ShoppingCartService,
   ],
   bootstrap: [AppComponent]
 })
