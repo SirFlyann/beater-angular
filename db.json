@@ -1,61 +1,94 @@
 {
   "genres": [
     {
-      "id": "pop",
-      "name": "Pop",
+      "id": "rock",
+      "name": "Rock n Roll",
       "rating": 4.9,
-      "picture": "assets/img/restaurants/breadbakery.png",
-      "review": "Músicas mundialmente famosas, necessárias em qualquer festa!"
+      "picture": "",
+      "review": "O melhor jeito de animar seu dia é com o bom e velho Rock n Roll!!!"
+    },
+    {
+      "id": "eletro",
+      "name": "Eletrônica",
+      "rating": 4.9,
+      "picture": "",
+      "review": "As melhores baladas acontecem em seu headphone!!!"
+    },
+    {
+      "id": "sertanejo",
+      "name": "Sertanejo",
+      "rating": 4.9,
+      "picture": "",
+      "review": "O melhor do Sertanejo há um play de distância"
+    },
+    {
+      "id": "jazz",
+      "name": "Jazz",
+      "rating": 4.9,
+      "picture": "",
+      "review": "Se tem mais de três acordes... É JAZZ!!!"
     }
   ],
   "menu": [
     {
-      "id": "cup-cake",
-      "imagePath": "assets/img/foods/cupcake.png",
-      "name": "Cup Cake",
-      "description": "Cup Cake recheado de Doce de Leite",
-      "price": 8.7,
-      "restaurantId": "bread-bakery"
+      "id": "rides",
+      "name": "Rides on the storm",
+      "album": "L.A WOAMAN",
+      "author": "THE DOORS",
+      "rating": 4.9,
+      "picture": "assets/img/foods/doors.jpg",
+      "description": "Não existe música melhor para se ouvir em um dia de chuva.",
+      "genreId": "rock"
     },
     {
-      "id": "donut",
-      "imagePath": "assets/img/foods/donut.png",
-      "name": "Donut",
-      "description": "Coberto com chantilly",
-      "price": 2.5,
-      "restaurantId": "bread-bakery"
+      "id": "end",
+      "name": "The End",
+      "album": "L.A WOAMAN",
+      "author": "The Doors",
+      "rating": 4.9,
+      "picture": "assets/img/foods/doors.jpg",
+      "description": "No fim de tudo, eis a melhor opção sonoroa.",
+      "genreId": "rock"
     },
     {
-      "id": "bread",
-      "imagePath": "assets/img/foods/bread.png",
-      "name": "Pão Artesanal Italiano",
-      "description": "Pão artesanal com queijos italianos",
-      "price": 15.9,
-      "restaurantId": "bread-bakery"
+      "id": "music",
+      "name": "When the music's over",
+      "album": "L.A WOAMAN",
+      "author": "The Doors",
+      "rating": 4.9,
+      "picture": "assets/img/foods/doors.jpg",
+      "description": "Quanda acaba, você quer ouvir mais!",
+      "genreId": "rock"
     },
     {
-      "id": "burger",
-      "imagePath": "assets/img/foods/burger.png",
-      "name": "Classic Burger",
-      "description": "O clássico. Não tem como errar.",
-      "price": 18.5,
-      "restaurantId": "burger-house"
+      "id": "believer",
+      "name": "Believer",
+      "album": "Evolve",
+      "author": "Imagine Dragons",
+      "rating": 4.9,
+      "picture": "assets/img/foods/dragons.jpg",
+      "description": "Acredite! E tudo será diferente.",
+      "genreId": "pop"
     },
     {
-      "id": "fries",
-      "imagePath": "assets/img/foods/fries.png",
-      "name": "Batatas Fritas",
-      "description": "Batatas fritas crocantes",
-      "price": 5.5,
-      "restaurantId": "burger-house"
+      "id": "waves",
+      "name": "Waves",
+      "album": "Waves",
+      "author": "Mr. Probz",
+      "rating": 4.9,
+      "picture": "assets/img/foods/waves.jpg",
+      "description": "Sinta as ondas...",
+      "genreId": "pop"
     },
     {
-      "id": "coke.png",
-      "imagePath": "assets/img/foods/coke.png",
-      "name": "Refrigerante",
-      "description": "O refri mais gelado da cidade.",
-      "price": 4.5,
-      "restaurantId": "burger-house"
+      "id": "havana",
+      "name": "Havana",
+      "album": "Camila",
+      "author": "Camila Cabello",
+      "rating": 4.9,
+      "picture": "assets/img/foods/dragons.jpg",
+      "description": "uh nha nha",
+      "genreId": "pop"
     },
     {
       "id": "capp",
@@ -314,7 +347,7 @@
       "date": "2016-12-20T18:25:43",
       "rating": 4.5,
       "comments": "Taxa de entrega bastante elevada e precisa colocar no app se a pessoa quer porção adicional de algo (calda, crocante etc)",
-      "restaurantId": "tasty-treats"
+      "genreId": "rock"
     }
   ],
   "orders": []

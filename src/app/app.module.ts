@@ -15,7 +15,8 @@ import { GenresService } from './genres/genres.service';
 import { GenreDetailComponent } from './genre-detail/genre-detail.component';
 import { MenuComponent } from './menu/menu.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { MenuItemComponent } from './menu-item/menu-item.component'
+import { MenuItemComponent } from './menu-item/menu-item.component';
+import { ReviewsComponent } from './reviews/reviews.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MenuItemComponent } from './menu-item/menu-item.component'
     GenreDetailComponent,
     MenuComponent,
     ShoppingCartComponent,
-    MenuItemComponent
+    MenuItemComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

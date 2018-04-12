@@ -25,13 +25,17 @@
           </dl>
         </div>
         <div class="box-footer detail-footer">
-          <a class="pull-left detail-active" href="detail-genre">Menu</a>
-          <a class="pull-right" href="detail-genre-reviews">Avaliações</a>
+          <a class="pull-left" routerLinkActive="detail-active" [routerLink]="['menu']">
+             Menu
+          </a>
+          <a class="pull-right" routerLinkActive="detail-active" [routerLink]="['reviews']">
+             Avaliações
+          </a>
         </div>
       </div>
     </div>
   </div>
   <div class="row">
-    <mt-menu></mt-menu>
+    <router-outlet></router-outlet>
   </div>
 </section>
