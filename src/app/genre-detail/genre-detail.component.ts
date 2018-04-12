@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 
 import { Genre } from '../genre/genre.model';
 
-import { GenreService } from '../genre/genre.service';
+import { GenresService } from '../genres/genres.service';
 
 @Component({
   selector: 'mt-genre-detail',
@@ -11,14 +11,15 @@ import { GenreService } from '../genre/genre.service';
 })
 export class GenreDetailComponent implements OnInit {
 
-  genre: Genre[];
+  genre: Genre;
 
-  constructor(genreService: GenreService, private route: ActivatedRoute) { }
+  constructor(
+    private genresService: GenresService,
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
-    console.log(this.route.params);
-
-    // this.genreService.genre(id).subscribe(genres => this.genres = genres);
+    this.genresService.genre(this.route.snapshot.params['id']).subscribe(genres => this.genre = genres[0]);
   }
 
 }

@@ -8,8 +8,17 @@ import {GenresComponent} from './genres/genres.component'
 import {GenreDetailComponent} from './genre-detail/genre-detail.component'
 
 export const ROUTES: Routes = [
-    {path: '', component: HomeComponent},
-    {path: 'about', component: AboutComponent},
-    {path: 'genres', component: GenresComponent},
-    {path: 'genres/:id', component: GenreDetailComponent}
+  {path: '', component: HomeComponent},
+  {path: 'about', component: AboutComponent},
+  {
+    path: 'genres',
+    component: GenresComponent,
+    children: [
+      {path: '', redirectTo: 'menu', pathMatch:'full'},
+    ]
+  },
+  {path: 'genres/:id', component: GenreDetailComponent}
 ];
+
+               // {path: 'menu', component: MenuComponent},
+               // {path: 'reviews', component: ReviewsComponent}
