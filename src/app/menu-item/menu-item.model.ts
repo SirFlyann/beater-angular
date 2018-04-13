@@ -6,4 +6,5 @@ export interface MenuItem {
   picture: string
   description: string
   genre: string
+  price: number
 }
